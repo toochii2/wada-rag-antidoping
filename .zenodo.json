@@ -1,0 +1,27 @@
+{
+  "title": "Anti-doping medication queries: benchmark and replication code for evaluating retrieval-grounded language models",
+  "upload_type": "software",
+  "description": "<p>Replication package for a study of how local large language models answer athletes' questions about whether a medicine is allowed in sport, with and without retrieval over current and outdated versions of the WADA Prohibited List.</p><p>Contents: 264 athlete-style questions with gold verdicts derived from the List, prompts, code for retrieval, model calls, scoring and analysis, and the model outputs (verdicts and cited clauses). The WADA documents are not included.</p><p>Code: MIT. Questions, labels and outputs: CC BY 4.0.</p>",
+  "creators": [
+    {
+      "name": "Alsayegh, Hawraa",
+      "affiliation": "Kuwait Ministry of Health"
+    },
+    {
+      "name": "Alsayegh, Ali",
+      "affiliation": "University of Strathclyde"
+    }
+  ],
+  "license": "mit",
+  "access_right": "open",
+  "keywords": [
+    "anti-doping",
+    "WADA Prohibited List",
+    "retrieval-augmented generation",
+    "medication safety",
+    "benchmark",
+    "language model evaluation"
+  ],
+  "version": "1.0.0",
+  "language": "eng"
+}

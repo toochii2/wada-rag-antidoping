@@ -1,0 +1,119 @@
+brand,rxnorm_rxcui,rxnorm_ingredients,openfda_generic_names,generic_us,generic_inn_list_name,status
+Ventolin,8887,albuterol,albuterol sulfate,albuterol,salbutamol,kept
+ProAir,647295,albuterol,,albuterol,salbutamol,rejected: openFDA missing or disagrees
+Proventil,202908,albuterol,,albuterol,salbutamol,rejected: openFDA missing or disagrees
+Pulmicort,196487,budesonide,budesonide,budesonide,budesonide,kept
+Flovent,217152,fluticasone,fluticasone propionate,fluticasone,fluticasone,kept
+Medrol,202702,methylprednisolone,methylprednisolone;methylprednisolone acetate;methylprednisolone sodium succinate;solu-medrol;solu-medrol(r) methylprednisolone sodium succinat,methylprednisolone,methylprednisolone,rejected: openFDA missing or disagrees
+Decadron,227682,dexamethasone,,dexamethasone,dexamethasone,rejected: openFDA missing or disagrees
+Rayos,1303126,prednisone,,prednisone,prednisone,rejected: openFDA missing or disagrees
+Inderal,151890,propranolol,propranolol hydrochloride,propranolol,propranolol,kept
+Tenormin,152413,atenolol,atenolol,atenolol,atenolol,kept
+Lopressor,203344,metoprolol,metoprolol tartrate,metoprolol,metoprolol,kept
+Toprol-XL,,,metoprolol succinate,,,rejected: not single-ingredient in RxNorm
+Bystolic,751613,nebivolol,nebivolol hydrochloride,nebivolol,nebivolol,kept
+Lasix,202991,furosemide,furosemide,furosemide,furosemide,kept
+Aldactone,151317,spironolactone,spironolactone,spironolactone,spironolactone,kept
+Inspra,342280,eplerenone,eplerenone,eplerenone,eplerenone,kept
+Kerendia,2562817,finerenone,,finerenone,finerenone,rejected: openFDA missing or disagrees
+Diamox,,,,,,rejected: not single-ingredient in RxNorm
+Trusopt,,,,,,rejected: not single-ingredient in RxNorm
+Azopt,194882,brinzolamide,brinzolamide,brinzolamide,brinzolamide,kept
+Afrin,215051,oxymetazoline,oxymetazoline hydrochloride,oxymetazoline,oxymetazoline,kept
+Ritalin,224917,methylphenidate,methylphenidate hydrochloride,methylphenidate,methylphenidate,kept
+Provigil,219484,modafinil,modafinil,modafinil,modafinil,kept
+Vyvanse,711043,lisdexamfetamine,lisdexamfetamine dimesylate,lisdexamfetamine,lisdexamfetamine,kept
+Arimidex,262485,anastrozole,anastrozole,anastrozole,anastrozole,kept
+Femara,203769,letrozole,letrozole,letrozole,letrozole,kept
+Aromasin,262105,exemestane,exemestane,exemestane,exemestane,kept
+Soltamox,498464,tamoxifen,tamoxifen citrate,tamoxifen,tamoxifen,kept
+Evista,217010,raloxifene,raloxifene hydrochloride,raloxifene,raloxifene,kept
+Ultram,220606,tramadol,,tramadol,tramadol,rejected: openFDA missing or disagrees
+OxyContin,218986,oxycodone,oxycodone hydrochloride,oxycodone,oxycodone,kept
+EpiPen,727341,epinephrine,epinephrine,epinephrine,epinephrine,kept
+Zyban,,,,,,rejected: not single-ingredient in RxNorm
+Wellbutrin,42568,bupropion,bupropion hydrochloride,bupropion,bupropion,kept
+Ozempic,1991307,semaglutide,oral semaglutide;semaglutide,semaglutide,semaglutide,rejected: openFDA missing or disagrees
+Mounjaro,2601734,tirzepatide,tirzepatide,tirzepatide,tirzepatide,rejected: ingredient not named in 2027 List text
+Epidiolex,2058901,cannabidiol,cannabidiol,cannabidiol,cannabidiol,kept
+Catapres,202941,clonidine,clonidine transdermal system,clonidine,clonidine,kept
+Intuniv,862007,guanfacine,guanfacine,guanfacine,guanfacine,kept
+Livdelzi,2690876,seladelpar,seladelpar lysine,seladelpar,seladelpar,kept
+Inluriyo,2725918,imlunestrant,,imlunestrant,imlunestrant,rejected: openFDA missing or disagrees
+Orserdu,2628479,elacestrant,elacestrant,elacestrant,elacestrant,kept
+Anadrol-50,,,,,,rejected: not single-ingredient in RxNorm
+Oxandrin,,,,,,rejected: not single-ingredient in RxNorm
+Sudafed,203302,pseudoephedrine,"acetaminophen and phenylephrine hydrochloride;acetaminophen, dextromethorphan hydrobromide, guaifenesin, and phenylephrine hydrochloride;acetaminophen, diphenhydramine, pseudoephedrine;acetaminophen, ",pseudoephedrine,pseudoephedrine,rejected: openFDA missing or disagrees
+Qvar,226084,beclomethasone,beclomethasone dipropionate hfa,beclomethasone,beclometasone,kept
+Arnuity Ellipta,,,fluticasone furoate,,,rejected: not single-ingredient in RxNorm
+Entocort EC,,,,,,rejected: not single-ingredient in RxNorm
+Uceris,1366551,budesonide,budesonide,budesonide,budesonide,kept
+Cortef,202645,hydrocortisone,hydrocortisone;hydrocortisone sodium succinate;solu-cortef,hydrocortisone,hydrocortisone,rejected: openFDA missing or disagrees
+Kenalog,202877,triamcinolone,triamcinolone acetonide,triamcinolone,triamcinolone acetonide,kept
+Androgel,261448,testosterone,,testosterone,testosterone,rejected: openFDA missing or disagrees
+Testim,353016,testosterone,testosterone,testosterone,testosterone,kept
+Xyosted,2099682,testosterone,testosterone enanthate,testosterone,testosterone,kept
+Novarel,218792,chorionic gonadotropin,"gonadotrophin, chorionic",chorionic gonadotropin,chorionic gonadotrophin,rejected: openFDA missing or disagrees
+Pregnyl,202637,chorionic gonadotropin,choriogonadotropin alfa,chorionic gonadotropin,chorionic gonadotrophin,rejected: openFDA missing or disagrees
+Lupron Depot,,,leuprolide acetate,,,rejected: not single-ingredient in RxNorm
+Zoladex,58328,goserelin,goserelin,goserelin,goserelin,kept
+Egrifta,1044588,tesamorelin,tesamorelin,tesamorelin,tesamorelin,kept
+Retacrit,2047592,epoetin alfa,epoetin alfa-epbx,epoetin alfa,erythropoietins,kept
+Epogen,203281,epoetin alfa,epoetin alfa,epoetin alfa,erythropoietins,kept
+Aranesp,337045,darbepoetin alfa,darbepoetin alfa,darbepoetin alfa,darbepoetins,kept
+Jesduvroq,2628216,daprodustat,daprodustat,daprodustat,daprodustat,kept
+Reblozyl,2262907,luspatercept,luspatercept,luspatercept,luspatercept,kept
+Increlex,614390,mecasermin,mecasermin,mecasermin,mecasermin,kept
+Serevent,203159,salmeterol,salmeterol xinafoate,salmeterol,salmeterol,kept
+Striverdi Respimat,1546064,olodaterol,olodaterol respimat inhalation spray,olodaterol,olodaterol,kept
+Arcapta,,,,,,rejected: not single-ingredient in RxNorm
+Xopenex,261702,levalbuterol,levalbuterol tartrate,levalbuterol,levosalbutamol,kept
+Brovana,669390,arformoterol,,arformoterol,arformoterol,rejected: openFDA missing or disagrees
+Perforomist,723732,formoterol,formoterol fumarate dihydrate,formoterol,formoterol,kept
+Nuvigil,710995,armodafinil,armodafinil,armodafinil,modafinil,kept
+Sunosi,2121759,solriamfetol,solriamfetol,solriamfetol,solriamfetol,kept
+Desoxyn,224965,methamphetamine,,methamphetamine,metamfetamine,rejected: openFDA missing or disagrees
+Evekeo,1600688,amphetamine,amphetamine sulfate,amphetamine,amfetamine,kept
+Adipex-P,332,phentermine,,phentermine,phentermine,rejected: openFDA missing or disagrees
+Dilaudid,224913,hydromorphone,hydromorphone hydrochloride,hydromorphone,hydromorphone,kept
+Demerol,282381,meperidine,meperidine hydrochloride,meperidine,pethidine,kept
+Methadose,152751,methadone,methadone hydrochloride,methadone,methadone,kept
+Subutex,,,,,,rejected: not single-ingredient in RxNorm
+Duragesic,,,,,,rejected: not single-ingredient in RxNorm
+Bumex,203538,bumetanide,bumetanide,bumetanide,bumetanide,kept
+Demadex,,,,,,rejected: not single-ingredient in RxNorm
+Zaroxolyn,,,,,,rejected: not single-ingredient in RxNorm
+Dyrenium,203238,triamterene,triamterene,triamterene,triamterene,kept
+Microzide,,,,,,rejected: not single-ingredient in RxNorm
+Thalitone,203477,chlorthalidone,chlorthalidone,chlorthalidone,chlortalidone,kept
+Vaprisol,616622,conivaptan,,conivaptan,conivaptan,rejected: openFDA missing or disagrees
+Samsca,849828,tolvaptan,tolvaptan,tolvaptan,tolvaptan,kept
+DDAVP,203658,desmopressin,desmopressin acetate,desmopressin,desmopressin,kept
+Nocdurna,2048573,desmopressin,,desmopressin,desmopressin,rejected: openFDA missing or disagrees
+Fareston,155082,toremifene,toremifene citrate,toremifene,toremifene,kept
+Faslodex,203870,fulvestrant,fulvestrant,fulvestrant,fulvestrant,kept
+Osphena,1370977,ospemifene,ospemifene,ospemifene,ospemifene,kept
+Clomid,151525,clomiphene,clomiphene citrate,clomiphene,clomifene,kept
+Kapvay,1013931,clonidine,,clonidine,clonidine,rejected: openFDA missing or disagrees
+Lumify,1999017,brimonidine,brimonidine tartrate,brimonidine,brimonidine,kept
+Visine,227581,tetrahydrozoline,"naphazoline hydrochloride and pheniramine maleate;polyethylene glycol 400;tetrahydrozoline hcl, polyethylene glycol 400, zinc sulfate;tetrahydrozoline hydrochloride;tetrahydrozoline hydrochloride and ",tetrahydrozoline,tetryzoline,rejected: openFDA missing or disagrees
+Nexiclon,1050312,clonidine,clonidine,clonidine,clonidine,kept
+Chantix,636230,varenicline,varenicline tartrate,varenicline,varenicline,rejected: ingredient not named in 2027 List text
+Nicorette,203808,nicotine,nicotine;nicotine polacrilex,nicotine,nicotine,kept
+Nucynta,854137,tapentadol,tapentadol hydrochloride,tapentadol,tapentadol,rejected: ingredient not named in 2027 List text
+Wegovy,2553502,semaglutide,semaglutide,semaglutide,semaglutide,rejected: ingredient not named in 2027 List text
+Zepbound,2669702,tirzepatide,tirzepatide,tirzepatide,tirzepatide,rejected: ingredient not named in 2027 List text
+Trulicity,1551296,dulaglutide,dulaglutide,dulaglutide,dulaglutide,rejected: ingredient not named in 2027 List text
+Dexedrine,151612,dextroamphetamine,dextroamphetamine sulfate,dextroamphetamine,amfetamine,kept
+Zenzedi,1425332,dextroamphetamine,dextroamphetamine sulfate,dextroamphetamine,amfetamine,kept
+Focalin,352654,dexmethylphenidate,dexmethylphenidate hydrochloride,dexmethylphenidate,methylphenidate,kept
+Mydayis,1927611,amphetamine;dextroamphetamine;amphetamine aspartate / amphetamine sulfate / dextroamphetamine saccharate / dextroamphetamine sulfate,"dextroamphetamine sulfate, dextroamphetamine saccharate, amphetamine aspartate monohydrate, and amphetamine sulfate",,,rejected: not single-ingredient in RxNorm
+Kerlone,,,,,,rejected: not single-ingredient in RxNorm
+Corgard,151549,nadolol,,nadolol,nadolol,rejected: openFDA missing or disagrees
+Betapace,224909,sotalol,sotalol hydrochloride,sotalol,sotalol,kept
+Coreg,216221,carvedilol,carvedilol;carvedilol phosphate,carvedilol,carvedilol,kept
+Trandate,152440,labetalol,,labetalol,labetalol,rejected: openFDA missing or disagrees
+Sectral,,,,,,rejected: not single-ingredient in RxNorm
+Zebeta,,,,,,rejected: not single-ingredient in RxNorm
+Timoptic,10601,timolol,timolol maleate,timolol,timolol,kept
+Betoptic,,,betaxolol hydrochloride,,,rejected: not single-ingredient in RxNorm

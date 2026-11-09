@@ -1,0 +1,14 @@
+# Tested with Python 3.12.10 and Ollama 0.40 on macOS (Apple M4 Pro, 24 GB)
+matplotlib==3.11.2
+numpy==2.5.4
+openpyxl==3.1.5
+pandas==3.1.0
+pdfplumber==0.11.10
+pydantic==2.14.2
+pymupdf==2.0
+rank-bm25==0.2.2
+requests==2.34.2
+scikit-learn==1.9.1
+scipy==1.18.1
+statsmodels==0.15.0
+tqdm==4.70.1

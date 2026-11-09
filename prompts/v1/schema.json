@@ -1,0 +1,7 @@
+{"type": "object",
+ "properties": {
+  "verdict": {"type": "string", "enum": ["prohibited_at_all_times", "prohibited_in_competition_only", "prohibited_in_particular_sports", "permitted", "permitted_with_conditions", "cannot_determine_refer"]},
+  "conditions": {"type": "array", "items": {"type": "string"}},
+  "cited_clauses": {"type": "array", "items": {"type": "string"}},
+  "explanation": {"type": "string", "maxLength": 600}},
+ "required": ["verdict", "conditions", "cited_clauses", "explanation"]}

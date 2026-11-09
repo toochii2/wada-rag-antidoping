@@ -1,0 +1,4 @@
+PROHIBITED LIST CLAUSES:
+{clauses}
+
+QUESTION: {question}

@@ -1,0 +1,684 @@
+{
+ "hardware": "Apple M4 Pro, 24 GB unified memory",
+ "platform": "macOS-26.6.2-arm64-arm-64bit",
+ "python": "3.12.10",
+ "ollama": "ollama version is 0.40.1",
+ "num_ctx": 8192,
+ "num_predict": 512,
+ "think": false,
+ "base_seed": 42,
+ "embedding_model": "bge-m3",
+ "retrieval": "BM25 (rank_bm25 Okapi) + bge-m3 cosine, RRF k=60, top-k 6 (ablation 3, 10)",
+ "prompt_version": "v1",
+ "prompt_sha256_16": {
+  "schema.json": "49e0f790382fd061",
+  "system_closed.txt": "28fb1f7ceae2fe3a",
+  "system_rag.txt": "490d6b5af36202f3",
+  "user_closed.txt": "0931b129c8364bf8",
+  "user_rag.txt": "a0e55b7243f64d65"
+ },
+ "pass_b_extraction": {
+  "model": "qwen3:30b-a3b",
+  "temperature": 0,
+  "seed": 42,
+  "chunks": 84
+ },
+ "runs": [
+  {
+   "model": "gemma3:12b",
+   "digest": "b92b218582c521ba287f38f1d6057dcd3c6cbff036f13cac97b5d861f5e58ec3",
+   "condition": "C0",
+   "tag": "consistency",
+   "temperature": 0.7,
+   "topk": 0,
+   "prompt_version": "v1",
+   "calls": 182,
+   "first": "2026-10-31T15:08:09",
+   "last": "2026-10-31T17:17:57",
+   "seeds": [
+    42,
+    43,
+    44
+   ],
+   "parse_failures": 4
+  },
+  {
+   "model": "gemma3:12b",
+   "digest": "b92b218582c521ba287f38f1d6057dcd3c6cbff036f13cac97b5d861f5e58ec3",
+   "condition": "C0",
+   "tag": "main",
+   "temperature": 0.0,
+   "topk": 0,
+   "prompt_version": "v1",
+   "calls": 253,
+   "first": "2026-10-31T11:54:54",
+   "last": "2026-10-31T17:07:18",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 10
+  },
+  {
+   "model": "gemma3:12b",
+   "digest": "b92b218582c521ba287f38f1d6057dcd3c6cbff036f13cac97b5d861f5e58ec3",
+   "condition": "C0",
+   "tag": "statuschange",
+   "temperature": 0.0,
+   "topk": 0,
+   "prompt_version": "v1",
+   "calls": 28,
+   "first": "2026-10-31T23:07:35",
+   "last": "2026-10-31T23:10:06",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "gemma3:12b",
+   "digest": "b92b218582c521ba287f38f1d6057dcd3c6cbff036f13cac97b5d861f5e58ec3",
+   "condition": "C1",
+   "tag": "consistency",
+   "temperature": 0.7,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 180,
+   "first": "2026-10-31T15:25:09",
+   "last": "2026-10-31T15:52:40",
+   "seeds": [
+    42,
+    43,
+    44
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "gemma3:12b",
+   "digest": "b92b218582c521ba287f38f1d6057dcd3c6cbff036f13cac97b5d861f5e58ec3",
+   "condition": "C1",
+   "tag": "main",
+   "temperature": 0.0,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 248,
+   "first": "2026-10-31T12:18:16",
+   "last": "2026-10-31T17:09:10",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "gemma3:12b",
+   "digest": "b92b218582c521ba287f38f1d6057dcd3c6cbff036f13cac97b5d861f5e58ec3",
+   "condition": "C1",
+   "tag": "statuschange",
+   "temperature": 0.0,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 28,
+   "first": "2026-10-31T23:10:15",
+   "last": "2026-10-31T23:14:14",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 1
+  },
+  {
+   "model": "gemma3:12b",
+   "digest": "b92b218582c521ba287f38f1d6057dcd3c6cbff036f13cac97b5d861f5e58ec3",
+   "condition": "C2",
+   "tag": "main",
+   "temperature": 0.0,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 248,
+   "first": "2026-10-31T12:55:48",
+   "last": "2026-10-31T17:11:04",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "gemma3:12b",
+   "digest": "b92b218582c521ba287f38f1d6057dcd3c6cbff036f13cac97b5d861f5e58ec3",
+   "condition": "CH",
+   "tag": "statuschange",
+   "temperature": 0.0,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 28,
+   "first": "2026-10-31T23:14:24",
+   "last": "2026-10-31T23:19:14",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 1
+  },
+  {
+   "model": "llama3.1:8b",
+   "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+   "condition": "C0",
+   "tag": "consistency",
+   "temperature": 0.7,
+   "topk": 0,
+   "prompt_version": "v1",
+   "calls": 180,
+   "first": "2026-10-31T15:52:46",
+   "last": "2026-10-31T15:58:57",
+   "seeds": [
+    42,
+    43,
+    44
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "llama3.1:8b",
+   "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+   "condition": "C0",
+   "tag": "main",
+   "temperature": 0.0,
+   "topk": 0,
+   "prompt_version": "v1",
+   "calls": 250,
+   "first": "2026-10-31T13:31:59",
+   "last": "2026-10-31T17:12:14",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 6
+  },
+  {
+   "model": "llama3.1:8b",
+   "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+   "condition": "C0",
+   "tag": "pilot",
+   "temperature": 0.0,
+   "topk": 0,
+   "prompt_version": "v1",
+   "calls": 6,
+   "first": "2026-10-31T09:14:01",
+   "last": "2026-10-31T09:14:11",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "llama3.1:8b",
+   "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+   "condition": "C0",
+   "tag": "statuschange",
+   "temperature": 0.0,
+   "topk": 0,
+   "prompt_version": "v1",
+   "calls": 28,
+   "first": "2026-10-31T23:19:24",
+   "last": "2026-10-31T23:20:29",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "llama3.1:8b",
+   "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+   "condition": "C1",
+   "tag": "consistency",
+   "temperature": 0.7,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 180,
+   "first": "2026-10-31T15:59:06",
+   "last": "2026-10-31T16:09:54",
+   "seeds": [
+    42,
+    43,
+    44
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "llama3.1:8b",
+   "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+   "condition": "C1",
+   "tag": "main",
+   "temperature": 0.0,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 248,
+   "first": "2026-10-31T13:39:46",
+   "last": "2026-10-31T17:13:01",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "llama3.1:8b",
+   "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+   "condition": "C1",
+   "tag": "pilot",
+   "temperature": 0.0,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 6,
+   "first": "2026-10-31T09:14:19",
+   "last": "2026-10-31T09:14:35",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "llama3.1:8b",
+   "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+   "condition": "C1",
+   "tag": "statuschange",
+   "temperature": 0.0,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 28,
+   "first": "2026-10-31T23:20:34",
+   "last": "2026-10-31T23:22:27",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "llama3.1:8b",
+   "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+   "condition": "C2",
+   "tag": "main",
+   "temperature": 0.0,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 248,
+   "first": "2026-10-31T13:56:03",
+   "last": "2026-10-31T17:13:44",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "llama3.1:8b",
+   "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+   "condition": "C2",
+   "tag": "pilot",
+   "temperature": 0.0,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 6,
+   "first": "2026-10-31T09:14:42",
+   "last": "2026-10-31T09:14:59",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "llama3.1:8b",
+   "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+   "condition": "CH",
+   "tag": "statuschange",
+   "temperature": 0.0,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 28,
+   "first": "2026-10-31T23:22:33",
+   "last": "2026-10-31T23:24:38",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "qwen3:14b",
+   "digest": "bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8",
+   "condition": "C0",
+   "tag": "consistency",
+   "temperature": 0.7,
+   "topk": 0,
+   "prompt_version": "v1",
+   "calls": 192,
+   "first": "2026-10-31T14:31:03",
+   "last": "2026-10-31T17:15:47",
+   "seeds": [
+    42,
+    43,
+    44
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "qwen3:14b",
+   "digest": "bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8",
+   "condition": "C0",
+   "tag": "main",
+   "temperature": 0.0,
+   "topk": 0,
+   "prompt_version": "v1",
+   "calls": 253,
+   "first": "2026-10-31T10:30:32",
+   "last": "2026-10-31T17:01:15",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 12
+  },
+  {
+   "model": "qwen3:14b",
+   "digest": "bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8",
+   "condition": "C0",
+   "tag": "statuschange",
+   "temperature": 0.0,
+   "topk": 0,
+   "prompt_version": "v1",
+   "calls": 28,
+   "first": "2026-10-31T22:57:10",
+   "last": "2026-10-31T22:59:17",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 1
+  },
+  {
+   "model": "qwen3:14b",
+   "digest": "bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8",
+   "condition": "C1",
+   "tag": "consistency",
+   "temperature": 0.7,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 192,
+   "first": "2026-10-31T14:44:09",
+   "last": "2026-10-31T17:17:16",
+   "seeds": [
+    42,
+    43,
+    44
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "qwen3:14b",
+   "digest": "bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8",
+   "condition": "C1",
+   "tag": "k10",
+   "temperature": 0.0,
+   "topk": 10,
+   "prompt_version": "v1",
+   "calls": 236,
+   "first": "2026-10-31T18:08:25",
+   "last": "2026-10-31T18:55:39",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "qwen3:14b",
+   "digest": "bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8",
+   "condition": "C1",
+   "tag": "k3",
+   "temperature": 0.0,
+   "topk": 3,
+   "prompt_version": "v1",
+   "calls": 236,
+   "first": "2026-10-31T17:48:53",
+   "last": "2026-10-31T18:08:16",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "qwen3:14b",
+   "digest": "bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8",
+   "condition": "C1",
+   "tag": "main",
+   "temperature": 0.0,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 248,
+   "first": "2026-10-31T10:48:36",
+   "last": "2026-10-31T17:02:59",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "qwen3:14b",
+   "digest": "bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8",
+   "condition": "C1",
+   "tag": "statuschange",
+   "temperature": 0.0,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 28,
+   "first": "2026-10-31T22:59:30",
+   "last": "2026-10-31T23:03:10",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "qwen3:14b",
+   "digest": "bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8",
+   "condition": "C2",
+   "tag": "main",
+   "temperature": 0.0,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 248,
+   "first": "2026-10-31T11:21:52",
+   "last": "2026-10-31T17:04:26",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "qwen3:14b",
+   "digest": "bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8",
+   "condition": "CH",
+   "tag": "statuschange",
+   "temperature": 0.0,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 28,
+   "first": "2026-10-31T23:03:20",
+   "last": "2026-10-31T23:07:24",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "qwen3:30b-a3b",
+   "digest": "ad815644918f0eaab341c12b67837cc6dd4562342cdaf118f83d5d554cb37226",
+   "condition": "C0",
+   "tag": "consistency",
+   "temperature": 0.7,
+   "topk": 0,
+   "prompt_version": "v1",
+   "calls": 192,
+   "first": "2026-10-31T14:12:21",
+   "last": "2026-10-31T17:14:16",
+   "seeds": [
+    42,
+    43,
+    44
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "qwen3:30b-a3b",
+   "digest": "ad815644918f0eaab341c12b67837cc6dd4562342cdaf118f83d5d554cb37226",
+   "condition": "C0",
+   "tag": "main",
+   "temperature": 0.0,
+   "topk": 0,
+   "prompt_version": "v1",
+   "calls": 248,
+   "first": "2026-10-31T09:16:17",
+   "last": "2026-10-31T16:56:14",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "qwen3:30b-a3b",
+   "digest": "ad815644918f0eaab341c12b67837cc6dd4562342cdaf118f83d5d554cb37226",
+   "condition": "C0",
+   "tag": "statuschange",
+   "temperature": 0.0,
+   "topk": 0,
+   "prompt_version": "v1",
+   "calls": 28,
+   "first": "2026-10-31T22:49:31",
+   "last": "2026-10-31T22:50:47",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "qwen3:30b-a3b",
+   "digest": "ad815644918f0eaab341c12b67837cc6dd4562342cdaf118f83d5d554cb37226",
+   "condition": "C1",
+   "tag": "consistency",
+   "temperature": 0.7,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 192,
+   "first": "2026-10-31T14:17:59",
+   "last": "2026-10-31T17:14:52",
+   "seeds": [
+    42,
+    43,
+    44
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "qwen3:30b-a3b",
+   "digest": "ad815644918f0eaab341c12b67837cc6dd4562342cdaf118f83d5d554cb37226",
+   "condition": "C1",
+   "tag": "k10",
+   "temperature": 0.0,
+   "topk": 10,
+   "prompt_version": "v1",
+   "calls": 236,
+   "first": "2026-10-31T17:25:41",
+   "last": "2026-10-31T17:48:40",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "qwen3:30b-a3b",
+   "digest": "ad815644918f0eaab341c12b67837cc6dd4562342cdaf118f83d5d554cb37226",
+   "condition": "C1",
+   "tag": "k3",
+   "temperature": 0.0,
+   "topk": 3,
+   "prompt_version": "v1",
+   "calls": 236,
+   "first": "2026-10-31T16:10:06",
+   "last": "2026-10-31T17:25:36",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "qwen3:30b-a3b",
+   "digest": "ad815644918f0eaab341c12b67837cc6dd4562342cdaf118f83d5d554cb37226",
+   "condition": "C1",
+   "tag": "main",
+   "temperature": 0.0,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 248,
+   "first": "2026-10-31T09:54:51",
+   "last": "2026-10-31T16:57:04",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "qwen3:30b-a3b",
+   "digest": "ad815644918f0eaab341c12b67837cc6dd4562342cdaf118f83d5d554cb37226",
+   "condition": "C1",
+   "tag": "pilot2",
+   "temperature": 0.0,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 6,
+   "first": "2026-10-31T09:54:15",
+   "last": "2026-10-31T09:54:40",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "qwen3:30b-a3b",
+   "digest": "ad815644918f0eaab341c12b67837cc6dd4562342cdaf118f83d5d554cb37226",
+   "condition": "C1",
+   "tag": "statuschange",
+   "temperature": 0.0,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 28,
+   "first": "2026-10-31T22:50:53",
+   "last": "2026-10-31T22:53:48",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "qwen3:30b-a3b",
+   "digest": "ad815644918f0eaab341c12b67837cc6dd4562342cdaf118f83d5d554cb37226",
+   "condition": "C2",
+   "tag": "main",
+   "temperature": 0.0,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 248,
+   "first": "2026-10-31T10:13:18",
+   "last": "2026-10-31T16:57:58",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  },
+  {
+   "model": "qwen3:30b-a3b",
+   "digest": "ad815644918f0eaab341c12b67837cc6dd4562342cdaf118f83d5d554cb37226",
+   "condition": "CH",
+   "tag": "statuschange",
+   "temperature": 0.0,
+   "topk": 6,
+   "prompt_version": "v1",
+   "calls": 28,
+   "first": "2026-10-31T22:53:56",
+   "last": "2026-10-31T22:56:59",
+   "seeds": [
+    42
+   ],
+   "parse_failures": 0
+  }
+ ]
+}

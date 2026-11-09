@@ -1,0 +1,14 @@
+Data licence
+
+The benchmark questions, gold labels, clause references, rule tables (structured fields), model outputs,
+scores and results in this repository (the benchmark/, data/processed/ and results/ folders) are
+licensed under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+Copyright (c) 2026 Hawraa Alsayegh and Ali Alsayegh.
+
+Full licence text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+You may share and adapt the material for any purpose, provided you give appropriate credit (cite the
+paper or the Zenodo record), link to the licence and indicate if changes were made.
+
+The WADA Prohibited List and related documents are (c) World Anti-Doping Agency. They are not
+included in this repository and are not covered by this licence.

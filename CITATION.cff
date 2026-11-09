@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use these questions or this code, please cite them as below."
+title: "Anti-doping medication queries: benchmark and replication code for evaluating retrieval-grounded language models"
+type: software
+version: 1.0.0
+date-released: 2026-11-09
+license: MIT
+repository-code: "https://github.com/toochii2/wada-rag-antidoping"
+authors:
+  - family-names: Alsayegh
+    given-names: Hawraa
+    affiliation: Kuwait Ministry of Health
+  - family-names: Alsayegh
+    given-names: Ali
+    affiliation: "Department of Design, Manufacturing and Engineering Management, University of Strathclyde"
+    email: a.alsayegh@strath.ac.uk
+keywords:
+  - retrieval-augmented generation
+  - anti-doping
+  - medication safety
+  - harm-weighted evaluation
+  - regulatory versioning
+  - trustworthy AI
