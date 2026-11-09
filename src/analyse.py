@@ -567,7 +567,13 @@ def results_figure(d, M, models):
     w = 0.26
     err = {"lw": 0.6, "capthick": 0.6, "ecolor": "#333333"}
     labels = [model_label(m).replace("-A3B", "").replace("-", "\n", 1) for m in models]
+    plotted = {}  # every value the figure draws, saved for the self-contained figure script
+
     def bars(ax, j, c, ys, lo=None, hi=None):
+        panel = "abcd"[list(axes.flat).index(ax)]
+        plotted.setdefault(panel, {})[c] = {"y": [round(float(v), 4) for v in ys],
+                                            "lo": None if lo is None else [round(float(v), 4) for v in lo],
+                                            "hi": None if hi is None else [round(float(v), 4) for v in hi]}
         x = np.arange(len(ys)) + (j - 1) * w
         ax.bar(x, ys, w, color=COL[c], edgecolor="white", linewidth=0.3, label=COND_NAME[c], zorder=2,
                yerr=None if lo is None else [lo, hi], capsize=1.5, error_kw=err)
@@ -664,6 +670,11 @@ def results_figure(d, M, models):
     fig.tight_layout(rect=(0, 0, 1, 0.95), h_pad=1.0, w_pad=1.2)
     fig.savefig(FIG / "fig2_results.pdf")
     plt.close(fig)
+    plotted["baseline_always_prohibited"] = round(float(base), 4)
+    plotted["models"] = [model_label(m) for m in models]
+    if S:
+        plotted["c_composition"] = S["composition"]
+    json.dump(plotted, open(ROOT / "results/fig2_values.json", "w"), indent=1)
 
 
 def design_figure():
