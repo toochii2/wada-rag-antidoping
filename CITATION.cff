@@ -5,6 +5,14 @@ type: software
 version: 1.0.0
 date-released: 2026-11-09
 license: MIT
+doi: "10.5281/zenodo.24080788"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24080788"
+    description: "Zenodo concept DOI (all versions)"
+  - type: doi
+    value: "10.5281/zenodo.24080789"
+    description: "Zenodo DOI of version 1.0.0"
 repository-code: "https://github.com/toochii2/wada-rag-antidoping"
 authors:
   - family-names: Alsayegh

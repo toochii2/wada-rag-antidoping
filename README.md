@@ -1,5 +1,7 @@
 # Anti-doping medication queries: benchmark and replication code
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24080788.svg)](https://doi.org/10.5281/zenodo.24080788)
+
 Replication package for a study that evaluates how local large language models answer athletes' questions about whether a medicine is allowed in sport. Models answer with and without retrieval over the World Anti-Doping Agency (WADA) Prohibited List, and with retrieval over current and outdated versions of the List.
 
 Authors: Hawraa Alsayegh (Kuwait Ministry of Health) and Ali Alsayegh (University of Strathclyde). The accompanying paper is under review; a link will be added on publication.
@@ -45,7 +47,7 @@ Requirements: Python 3.11 or later; [Ollama](https://ollama.com) with `qwen3:30b
 
 ## Citation and licence
 
-Please cite this repository using [`CITATION.cff`](CITATION.cff).
+Please cite the archived release: Alsayegh, H., Alsayegh, A.: Anti-doping medication queries: benchmark and replication code (version 1.0.0). Zenodo (2026). https://doi.org/10.5281/zenodo.24080788. The same details are in [`CITATION.cff`](CITATION.cff).
 
 - Code: MIT ([`LICENSE`](LICENSE)).
 - Questions, labels and model outputs: CC BY 4.0 ([`LICENSE-DATA`](LICENSE-DATA)).
