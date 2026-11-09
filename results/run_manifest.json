@@ -194,22 +194,6 @@
    "model": "llama3.1:8b",
    "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
    "condition": "C0",
-   "tag": "pilot",
-   "temperature": 0.0,
-   "topk": 0,
-   "prompt_version": "v1",
-   "calls": 6,
-   "first": "2026-10-31T09:14:01",
-   "last": "2026-10-31T09:14:11",
-   "seeds": [
-    42
-   ],
-   "parse_failures": 0
-  },
-  {
-   "model": "llama3.1:8b",
-   "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
-   "condition": "C0",
    "tag": "statuschange",
    "temperature": 0.0,
    "topk": 0,
@@ -260,22 +244,6 @@
    "model": "llama3.1:8b",
    "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
    "condition": "C1",
-   "tag": "pilot",
-   "temperature": 0.0,
-   "topk": 6,
-   "prompt_version": "v1",
-   "calls": 6,
-   "first": "2026-10-31T09:14:19",
-   "last": "2026-10-31T09:14:35",
-   "seeds": [
-    42
-   ],
-   "parse_failures": 0
-  },
-  {
-   "model": "llama3.1:8b",
-   "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
-   "condition": "C1",
    "tag": "statuschange",
    "temperature": 0.0,
    "topk": 6,
@@ -299,22 +267,6 @@
    "calls": 248,
    "first": "2026-10-31T13:56:03",
    "last": "2026-10-31T17:13:44",
-   "seeds": [
-    42
-   ],
-   "parse_failures": 0
-  },
-  {
-   "model": "llama3.1:8b",
-   "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
-   "condition": "C2",
-   "tag": "pilot",
-   "temperature": 0.0,
-   "topk": 6,
-   "prompt_version": "v1",
-   "calls": 6,
-   "first": "2026-10-31T09:14:42",
-   "last": "2026-10-31T09:14:59",
    "seeds": [
     42
    ],
@@ -611,22 +563,6 @@
    "calls": 248,
    "first": "2026-10-31T09:54:51",
    "last": "2026-10-31T16:57:04",
-   "seeds": [
-    42
-   ],
-   "parse_failures": 0
-  },
-  {
-   "model": "qwen3:30b-a3b",
-   "digest": "ad815644918f0eaab341c12b67837cc6dd4562342cdaf118f83d5d554cb37226",
-   "condition": "C1",
-   "tag": "pilot2",
-   "temperature": 0.0,
-   "topk": 6,
-   "prompt_version": "v1",
-   "calls": 6,
-   "first": "2026-10-31T09:54:15",
-   "last": "2026-10-31T09:54:40",
    "seeds": [
     42
    ],

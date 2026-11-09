@@ -1,6 +1,6 @@
 """Automatic scoring of model outputs against gold labels. No LLM grader.
 
-Harm classes (pre-specified before any model run, see DECISIONS.md):
+Harm classes (pre-specified before any model run):
   gold prohibited_*        model permitted                    false_permit        10
   gold prohibited_*        model permitted_with_conditions    conditional_permit   5
   gold prohibited_*        model narrower prohibition scope   scope_understated    5

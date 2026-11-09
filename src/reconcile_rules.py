@@ -10,7 +10,7 @@ status. Disagreements are resolved against the source clause text:
     that says it is not prohibited or not considered prohibited);
   * if the clause text still does not settle it, the row is marked ambiguous
     and excluded from benchmark Groups A to C.
-Every disagreement is flagged for Hawraa's review.
+Every disagreement is flagged for pharmacist review.
 
 Usage: python src/reconcile_rules.py <year>
 Writes data/processed/rules_<year>.csv and results/rule_extraction_agreement_<year>.json

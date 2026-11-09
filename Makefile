@@ -20,7 +20,7 @@ runs:
 score:
 	$(PY) src/score.py
 
-# metrics, statistics, figures and tables (written to results/ and paper/)
+# metrics, statistics, figures and tables (written to results/metrics.json, results/tables/ and results/figures/)
 analyse:
 	$(PY) src/analyse.py
 	$(PY) src/summary.py

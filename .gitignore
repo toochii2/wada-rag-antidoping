@@ -1,19 +1,14 @@
 # WADA documents and anything derived from their text are never committed
-data/raw/
-data/processed/chunks_*.jsonl
-data/processed/text_*
-data/processed/emb_*
-data/processed/query_emb_cache.json
-# local environment and build outputs
+data/
+# outputs written by `make score analyse` (regenerated from results/runs/)
+results/scored.csv
+results/metrics.json
+results/summary.md
+results/fig2_values.json
+results/tables/
+results/figures/
+# local environment
 .venv/
 __pycache__/
 *.pyc
 .DS_Store
-paper/*.aux
-paper/*.log
-paper/*.bbl
-paper/*.blg
-paper/*.out
-paper/main.pdf
-paper/main.docx
-dist/

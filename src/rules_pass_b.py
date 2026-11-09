@@ -39,7 +39,7 @@ SCHEMA = {
     "required": ["rows"],
 }
 
-PROMPT_VERSION = "v2"  # v1 omitted examples listed after "e.g."; see DECISIONS.md
+PROMPT_VERSION = "v2"  # v1 omitted examples listed after "e.g.", revised before any benchmark run
 SYSTEM = """You extract a rule table from one clause of the WADA Prohibited List.
 Return every substance, named class of substances, or method that is NAMED in the CLAUSE text, one row each.
 Be exhaustive: every bullet point is its own row, and every example given after "e.g.", "such as" or

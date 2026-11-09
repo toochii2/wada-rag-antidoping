@@ -595,7 +595,7 @@ def main():
     strat.loc["total"] = strat.sum(numeric_only=True)
     strat.to_csv(ROOT / "benchmark/stratification.csv")
     print(strat.to_string())
-    # 30% stratified sample for Hawraa's spot-check
+    # 30% stratified sample for the pharmacist's spot-check
     rs = random.Random(SEED + 9)
     sample = []
     for (grp, v), sub in df.groupby(["group", "verdict"]):

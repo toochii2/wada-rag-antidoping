@@ -89,7 +89,7 @@ def main():
             ("Can I take codeine for a headache on competition day {frame}?", "codeine", P, 2023, "S7"),
             ("Is co-codamol (codeine and paracetamol) allowed on race day {frame}?", "codeine", P, 2023, "S7")]:
         add("H6", q, sub, sub, gold, gold, year, ref, False)
-    ov = ROOT / "benchmark/status_change_overrides.csv"  # pharmacist corrections (scripts/apply_hawraa_review.py)
+    ov = ROOT / "benchmark/status_change_overrides.csv"  # pharmacist corrections, if any
     if ov.exists():
         by = {i["item_id"]: i for i in items}
         for line in open(ov).read().splitlines()[1:]:

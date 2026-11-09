@@ -17,7 +17,7 @@ if [ "${ABLATION:-1}" = "1" ]; then
     for k in 3 10; do $PY src/run_experiments.py --model "$m" --condition C1 --topk $k --tag k$k; done
   done
 fi
-# status-change arm (pre-specified in DECISIONS.md): closed-book, current index, historical index
+# status-change arm (analysis plan written before its runs): closed-book, current index, historical index
 if [ "${STATUSCHANGE:-1}" = "1" ]; then
   for m in $MODELS; do
     for c in C0 C1 CH; do

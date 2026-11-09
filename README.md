@@ -27,7 +27,7 @@ Gold verdicts are one of `prohibited_at_all_times`, `prohibited_in_competition_o
 ## Not included
 
 - **WADA documents.** The Prohibited Lists are © World Anti-Doping Agency and are not redistributed. Download them from https://www.wada-ama.org/en/resources/world-anti-doping-code-and-international-standards/prohibited-list.
-- **Text quoted from the List.** The released outputs keep each answer's verdict and cited clause references. The models' free-text explanations are removed, because they often quote the List. The facts that scoring reads from that text (condition completeness, mention of a therapeutic use exemption, out-of-competition-only wording, citation match) are kept as flags in each output (`parsed.text_flags`), so scoring the released outputs reproduces every reported measure.
+- **Text quoted from the List.** The released outputs keep each answer's verdict and cited clause references. The models' free-text explanations are removed, because they often quote the List. The facts that scoring reads from that text (condition completeness, mention of a therapeutic use exemption, out-of-competition-only wording, citation match) are kept as flags in each output (`parsed.text_flags`), as is whether the raw answer mentioned the year 2026 (`mentions_2026`). Scoring the released outputs therefore reproduces every model result. Two kinds of number need more: figures about the Lists and rule tables (clause counts, agreement between the two extraction passes, changes between Lists) come from `make benchmark`, which needs the WADA PDFs, and the size of the shift caused by the post-run corrections needs the earlier labels listed in `benchmark/corrections.csv`.
 
 ## Replicating the study
 
@@ -42,6 +42,8 @@ Requirements: Python 3.11 or later; [Ollama](https://ollama.com) with `qwen3:30b
    ```bash
    make all
    ```
+
+Scoring writes `results/scored.csv`; analysis writes every reported measure to `results/metrics.json`, with tables in `results/tables/` and figures in `results/figures/`. To score and analyse the released outputs without model calls or WADA documents, run `make score analyse`.
 
 `make all` reuses the released outputs in `results/runs/` and calls a model only for items that are missing. To re-run every call, delete `results/runs/` first. Local quantised models are not bit-for-bit deterministic across hardware, so a full re-run may differ slightly. `make benchmark` regenerates the questions from the Lists. This step also needs the 2027 Monitoring Program PDF in `data/raw/`, as `2027_monitoring_program.pdf`.
 

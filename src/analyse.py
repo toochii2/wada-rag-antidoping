@@ -1,8 +1,8 @@
 """Metrics, statistics, figures and LaTeX tables from results/scored.csv.
 
-Every number used in the paper is written to results/metrics.json and to
-paper/generated/numbers.tex (LaTeX macros); tables go to paper/generated/*.tex
-and figures to paper/figures/*.pdf.
+Every reported number is written to results/metrics.json and to
+results/tables/numbers.tex (LaTeX macros); tables go to results/tables/*.tex
+and figures to results/figures/*.pdf.
 """
 import json
 import string
@@ -20,8 +20,8 @@ from scipy.stats import binomtest, kendalltau  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-GEN = ROOT / "paper/generated"
-FIG = ROOT / "paper/figures"
+GEN = ROOT / "results/tables"
+FIG = ROOT / "results/figures"
 B = 10000
 RNG = np.random.default_rng(20261031)
 COND_NAME = {"C0": "Closed-book", "C1": "RAG, current List", "C2": "RAG, stale List"}
@@ -371,12 +371,13 @@ def main():
             seen.add(r["item_id"])
             n += 1
             intro += any(h["clause_ref"] == "INTRO" for h in r["retrieved"])
-            if "2026" in (r.get("raw") or ""):
+            # the public release replaces the raw text with a flag holding the same fact
+            if r["mentions_2026"] if "mentions_2026" in r else "2026" in (r.get("raw") or ""):
                 n26 += 1
                 n26ref += (r.get("parsed") or {}).get("verdict") == "cannot_determine_refer"
         M["diag"]["date_mentions"][r["model"]] = {"n": n, "mention_2026": n26, "mention_and_refer": n26ref,
                                                  "intro_retrieved": intro}
-    # status-change arm (pre-specified in DECISIONS.md): historical index (CH) versus current index (C1)
+    # status-change arm (analysis plan written before its runs): historical index (CH) versus current index (C1)
     sc = df[df["tag"] == "statuschange"]
     if not sc.empty:
         S = {"per": {}, "tests": {}, "family": {}}
@@ -964,7 +965,7 @@ def macros(M, models, items):
     mac("AccsOneTwoPMax", f"{max(ps):.3f}")
     ps = [M["tests"][f"{m}|accs_C0vC1"]["p_holm"] for m in models[:2] if f"{m}|accs_C0vC1" in M["tests"]]
     mac("AccsZeroOneQwenPMax", f"{max(ps):.3f}")
-    prev = ROOT / "results/metrics_before_label_corrections.json"  # archived metrics before the round-3 label corrections
+    prev = ROOT / "results/metrics_before_label_corrections.json"  # metrics before the label corrections (not released)
     if prev.exists():
         P = json.load(open(prev))["per"]
         mac("MaxFpShift", f"{100 * max(abs(M['per'][k]['false_permit'] - P[k]['false_permit']) for k in M['per'] if k in P):.1f}")
